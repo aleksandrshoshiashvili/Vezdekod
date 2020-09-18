@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IconFieldTableViewCell" rowHeight="105" id="FQp-FD-9Fw" customClass="IconFieldTableViewCell" customModule="PodcastEdit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FQp-FD-9Fw" id="OBc-LD-uQI">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="so6-C8-nts">
+                        <rect key="frame" x="12" y="14" width="72" height="72"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="1dQ-DQ-303"/>
+                            <constraint firstAttribute="height" constant="72" id="6Tz-kB-yqc"/>
+                        </constraints>
+                        <state key="normal" image="placeholder"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="handleIconAction" destination="FQp-FD-9Fw" eventType="touchUpInside" id="5Oq-Df-zgw"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HVI-vR-syw" customClass="TextField" customModule="PodcastEdit" customModuleProvider="target">
+                        <rect key="frame" x="96" y="39" width="306" height="44"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="9UD-wz-WK2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="insetY">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOT-Ev-b0S">
+                        <rect key="frame" x="96" y="14" width="306" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.42745098040000001" green="0.47058823529999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="so6-C8-nts" secondAttribute="bottom" priority="900" constant="14" id="9aj-Nz-Etr"/>
+                    <constraint firstAttribute="trailing" secondItem="HVI-vR-syw" secondAttribute="trailing" constant="12" id="AQm-vS-Rek"/>
+                    <constraint firstItem="so6-C8-nts" firstAttribute="leading" secondItem="OBc-LD-uQI" secondAttribute="leading" constant="12" id="MEO-Cv-1qi"/>
+                    <constraint firstItem="so6-C8-nts" firstAttribute="top" secondItem="OBc-LD-uQI" secondAttribute="top" constant="14" id="PVd-jX-Cuy"/>
+                    <constraint firstAttribute="trailing" secondItem="cOT-Ev-b0S" secondAttribute="trailing" constant="12" id="SWd-O2-nyC"/>
+                    <constraint firstItem="HVI-vR-syw" firstAttribute="leading" secondItem="so6-C8-nts" secondAttribute="trailing" constant="12" id="hve-a4-cMP"/>
+                    <constraint firstItem="cOT-Ev-b0S" firstAttribute="top" secondItem="so6-C8-nts" secondAttribute="top" id="s9K-Vm-osA"/>
+                    <constraint firstItem="HVI-vR-syw" firstAttribute="top" secondItem="cOT-Ev-b0S" secondAttribute="bottom" constant="8" id="wGf-SD-b8q"/>
+                    <constraint firstItem="cOT-Ev-b0S" firstAttribute="leading" secondItem="so6-C8-nts" secondAttribute="trailing" constant="12" id="we6-Hf-kGt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconButton" destination="so6-C8-nts" id="qQJ-pX-fVE"/>
+                <outlet property="textField" destination="HVI-vR-syw" id="bJO-Lv-vVZ"/>
+                <outlet property="titleLabel" destination="cOT-Ev-b0S" id="bum-gJ-xoq"/>
+            </connections>
+            <point key="canvasLocation" x="57.971014492753625" y="15.066964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="26" height="26"/>
+    </resources>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FileTableViewCell" rowHeight="180" id="UWK-hT-PUd" customClass="FileTableViewCell" customModule="PodcastEdit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UWK-hT-PUd" id="UKY-og-xUq">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="podcastIcon" translatesAutoresizingMaskIntoConstraints="NO" id="pMv-yW-FlO">
+                        <rect key="frame" x="12" y="22" width="48" height="48"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="abg-FG-LOf"/>
+                            <constraint firstAttribute="width" constant="48" id="cPc-lf-IVp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hO-uO-P5R">
+                        <rect key="frame" x="72" y="22" width="285" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnQ-FB-iR4">
+                        <rect key="frame" x="369" y="22" width="33" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.63529411764705879" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVl-xn-0bI">
+                        <rect key="frame" x="12" y="80" width="390" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.63529411759999999" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWz-n9-PqM">
+                        <rect key="frame" x="32" y="114" width="350" height="44"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="viH-Di-VRF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                        <state key="normal" title="Редактировать аудиозапись"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.2470588235" green="0.54117647059999996" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="handleMainAction" destination="UWK-hT-PUd" eventType="touchUpInside" id="8tv-DM-KS1"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="fWz-n9-PqM" secondAttribute="trailing" constant="12" id="026-Ey-1ck"/>
+                    <constraint firstItem="fWz-n9-PqM" firstAttribute="leading" secondItem="UKY-og-xUq" secondAttribute="leadingMargin" constant="12" id="8Q4-2Z-rQW"/>
+                    <constraint firstItem="CnQ-FB-iR4" firstAttribute="bottom" secondItem="2hO-uO-P5R" secondAttribute="bottom" id="8rR-gr-hwO"/>
+                    <constraint firstAttribute="trailing" secondItem="QVl-xn-0bI" secondAttribute="trailing" constant="12" id="FQW-Oq-Hzh"/>
+                    <constraint firstItem="fWz-n9-PqM" firstAttribute="top" secondItem="QVl-xn-0bI" secondAttribute="bottom" constant="22" id="Jue-Y2-rXh"/>
+                    <constraint firstItem="QVl-xn-0bI" firstAttribute="top" secondItem="pMv-yW-FlO" secondAttribute="bottom" constant="10" id="Kuy-sP-sim"/>
+                    <constraint firstItem="pMv-yW-FlO" firstAttribute="top" secondItem="UKY-og-xUq" secondAttribute="top" constant="22" id="Mjs-VV-bWA"/>
+                    <constraint firstItem="2hO-uO-P5R" firstAttribute="leading" secondItem="pMv-yW-FlO" secondAttribute="trailing" constant="12" id="OW7-CO-thm"/>
+                    <constraint firstItem="pMv-yW-FlO" firstAttribute="leading" secondItem="UKY-og-xUq" secondAttribute="leading" constant="12" id="S1Q-WT-DyZ"/>
+                    <constraint firstAttribute="trailing" secondItem="CnQ-FB-iR4" secondAttribute="trailing" constant="12" id="W0i-xs-ATA"/>
+                    <constraint firstItem="QVl-xn-0bI" firstAttribute="leading" secondItem="UKY-og-xUq" secondAttribute="leading" constant="12" id="XnN-i6-PeQ"/>
+                    <constraint firstItem="CnQ-FB-iR4" firstAttribute="leading" secondItem="2hO-uO-P5R" secondAttribute="trailing" constant="12" id="Z10-n6-3RP"/>
+                    <constraint firstAttribute="bottom" secondItem="fWz-n9-PqM" secondAttribute="bottom" constant="22" id="dSh-pR-xAS"/>
+                    <constraint firstItem="2hO-uO-P5R" firstAttribute="top" secondItem="pMv-yW-FlO" secondAttribute="top" id="h8q-a1-roA"/>
+                    <constraint firstItem="2hO-uO-P5R" firstAttribute="bottom" secondItem="pMv-yW-FlO" secondAttribute="bottom" id="kpB-O9-ffi"/>
+                    <constraint firstItem="CnQ-FB-iR4" firstAttribute="top" secondItem="2hO-uO-P5R" secondAttribute="top" id="qaK-U6-WDV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="actionButton" destination="fWz-n9-PqM" id="L0w-I6-W7M"/>
+                <outlet property="infoLabel" destination="QVl-xn-0bI" id="1uh-xV-0Pq"/>
+                <outlet property="timeCodeLabel" destination="CnQ-FB-iR4" id="ODa-3l-2Dd"/>
+                <outlet property="titleLabel" destination="2hO-uO-P5R" id="QYe-8L-Bld"/>
+            </connections>
+            <point key="canvasLocation" x="-1.4492753623188408" y="101.11607142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="podcastIcon" width="23" height="25"/>
+    </resources>
+</document>

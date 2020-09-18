@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectorView" customModule="PodcastEdit" customModuleProvider="target">
+            <connections>
+                <outlet property="arrowButton" destination="GDq-lH-D5z" id="H6e-at-a63"/>
+                <outlet property="containerView" destination="L6r-Z3-v1f" id="Qou-l8-8TU"/>
+                <outlet property="titleLabel" destination="uMj-3W-yrO" id="MTZ-FS-1ih"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GoI-Ng-Fr0">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="36"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6r-Z3-v1f">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😃  Хорошее настроение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMj-3W-yrO">
+                            <rect key="frame" x="12" y="4" width="372" height="28"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDq-lH-D5z">
+                            <rect key="frame" x="390" y="16" width="8" height="4"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="8" id="6rh-hs-flM"/>
+                                <constraint firstAttribute="height" constant="4" id="EST-qU-aJT"/>
+                            </constraints>
+                            <state key="normal" image="arrowDown"/>
+                            <connections>
+                                <action selector="handleArrowAction" destination="-1" eventType="touchUpInside" id="8Xo-et-L2P"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="GDq-lH-D5z" firstAttribute="leading" secondItem="uMj-3W-yrO" secondAttribute="trailing" constant="6" id="2hu-zv-pW3"/>
+                        <constraint firstItem="GDq-lH-D5z" firstAttribute="centerY" secondItem="L6r-Z3-v1f" secondAttribute="centerY" id="JiM-1T-dBd"/>
+                        <constraint firstItem="uMj-3W-yrO" firstAttribute="top" secondItem="L6r-Z3-v1f" secondAttribute="top" constant="4" id="P7o-Tn-z5F"/>
+                        <constraint firstAttribute="bottom" secondItem="uMj-3W-yrO" secondAttribute="bottom" constant="4" id="fkD-Kj-cUG"/>
+                        <constraint firstAttribute="trailing" secondItem="GDq-lH-D5z" secondAttribute="trailing" constant="16" id="he1-Wd-5yg"/>
+                        <constraint firstItem="uMj-3W-yrO" firstAttribute="leading" secondItem="L6r-Z3-v1f" secondAttribute="leading" constant="12" id="qcm-KF-mht"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="L6r-Z3-v1f" firstAttribute="leading" secondItem="GoI-Ng-Fr0" secondAttribute="leading" id="4OU-d0-yBI"/>
+                <constraint firstAttribute="bottom" secondItem="L6r-Z3-v1f" secondAttribute="bottom" id="OWG-no-JUo"/>
+                <constraint firstItem="L6r-Z3-v1f" firstAttribute="top" secondItem="GoI-Ng-Fr0" secondAttribute="top" id="YfL-O9-W67"/>
+                <constraint firstAttribute="trailing" secondItem="L6r-Z3-v1f" secondAttribute="trailing" id="ptn-4G-N1Q"/>
+                <constraint firstItem="L6r-Z3-v1f" firstAttribute="centerX" secondItem="GoI-Ng-Fr0" secondAttribute="centerX" id="zsR-IN-ghw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-633" y="-225"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowDown" width="8" height="4"/>
+    </resources>
+</document>

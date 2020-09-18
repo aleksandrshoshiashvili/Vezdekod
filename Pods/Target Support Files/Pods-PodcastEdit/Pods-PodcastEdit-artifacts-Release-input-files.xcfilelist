@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-PodcastEdit/Pods-PodcastEdit-artifacts.sh
+${PODS_ROOT}/AudioKit/AudioKit.xcframework
+${PODS_ROOT}/AudioKit/AudioKitUI.xcframework

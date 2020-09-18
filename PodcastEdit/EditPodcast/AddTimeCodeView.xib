@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6W7-sb-cR4" customClass="AddTimeCodeView" customModule="PodcastEdit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6C-eD-JZk">
+                    <rect key="frame" x="0.0" y="22" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="E2a-tp-YDn"/>
+                        <constraint firstAttribute="height" constant="24" id="pEY-5i-PNA"/>
+                    </constraints>
+                    <state key="normal" image="icon_remove_circle_24"/>
+                    <connections>
+                        <action selector="didTapDelete:" destination="6W7-sb-cR4" eventType="touchUpInside" id="aa9-y1-AR2"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" text="Название таймкода" translatesAutoresizingMaskIntoConstraints="NO" id="OiZ-Bw-JaP">
+                    <rect key="frame" x="36" y="12" width="286" height="52"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="0.50588235290000005" green="0.54901960780000003" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="rect" keyPath="textContainerInset">
+                            <rect key="value" x="12" y="12" width="12" height="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="6W7-sb-cR4" id="wCQ-0v-Tgi"/>
+                    </connections>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" text="00:00" translatesAutoresizingMaskIntoConstraints="NO" id="Bke-HJ-jqR">
+                    <rect key="frame" x="334" y="12" width="80" height="44"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="EEZ-Lf-av3"/>
+                        <constraint firstAttribute="height" constant="44" id="HCq-ub-CdM"/>
+                    </constraints>
+                    <color key="textColor" red="0.50588235290000005" green="0.54901960780000003" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="done"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="rect" keyPath="textContainerInset">
+                            <rect key="value" x="12" y="12" width="12" height="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="6W7-sb-cR4" id="rhy-6R-uhT"/>
+                    </connections>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fNo-m8-Wiw" firstAttribute="trailing" secondItem="Bke-HJ-jqR" secondAttribute="trailing" id="K1L-0s-BuI"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Bke-HJ-jqR" secondAttribute="bottom" constant="12" id="N3G-qf-DsM"/>
+                <constraint firstItem="Bke-HJ-jqR" firstAttribute="centerY" secondItem="h6C-eD-JZk" secondAttribute="centerY" id="TA3-iS-LgJ"/>
+                <constraint firstItem="Bke-HJ-jqR" firstAttribute="top" secondItem="6W7-sb-cR4" secondAttribute="top" constant="12" id="Vc3-XF-SYw"/>
+                <constraint firstItem="Bke-HJ-jqR" firstAttribute="leading" secondItem="OiZ-Bw-JaP" secondAttribute="trailing" constant="12" id="Zsc-DB-86r"/>
+                <constraint firstItem="h6C-eD-JZk" firstAttribute="leading" secondItem="6W7-sb-cR4" secondAttribute="leading" id="bzh-Ps-UEg"/>
+                <constraint firstItem="OiZ-Bw-JaP" firstAttribute="leading" secondItem="h6C-eD-JZk" secondAttribute="trailing" constant="12" id="fKG-Cx-TG0"/>
+                <constraint firstItem="OiZ-Bw-JaP" firstAttribute="top" secondItem="6W7-sb-cR4" secondAttribute="top" constant="12" id="pBW-iQ-QgA"/>
+                <constraint firstAttribute="bottom" secondItem="OiZ-Bw-JaP" secondAttribute="bottom" constant="12" id="zdG-TO-D3a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fNo-m8-Wiw"/>
+            <connections>
+                <outlet property="nameTextView" destination="OiZ-Bw-JaP" id="Zeb-O8-XVR"/>
+                <outlet property="removeTimeCodeButton" destination="h6C-eD-JZk" id="rbE-vP-iwy"/>
+                <outlet property="timeTextView" destination="Bke-HJ-jqR" id="mY0-qE-yh9"/>
+            </connections>
+            <point key="canvasLocation" x="834.78260869565224" y="-130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_remove_circle_24" width="24" height="24"/>
+    </resources>
+</document>

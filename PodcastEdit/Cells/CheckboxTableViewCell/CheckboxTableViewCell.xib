@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckboxTableViewCell" rowHeight="56" id="H3y-qv-HWk" customClass="CheckboxTableViewCell" customModule="PodcastEdit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H3y-qv-HWk" id="Mb5-eY-2Ig">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkl-Pq-hbA">
+                        <rect key="frame" x="46" y="12" width="354" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYr-Ee-XAc">
+                        <rect key="frame" x="12" y="18" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="9uG-Ez-UvK"/>
+                            <constraint firstAttribute="height" constant="20" id="Ieh-Qd-1c4"/>
+                        </constraints>
+                        <connections>
+                            <action selector="handleCheckboxAction" destination="H3y-qv-HWk" eventType="touchUpInside" id="PqM-b3-2Ch"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Hkl-Pq-hbA" secondAttribute="trailing" constant="14" id="UG7-H4-GPd"/>
+                    <constraint firstAttribute="bottom" secondItem="Hkl-Pq-hbA" secondAttribute="bottom" constant="12" id="mLn-RD-UmL"/>
+                    <constraint firstItem="jYr-Ee-XAc" firstAttribute="centerY" secondItem="Mb5-eY-2Ig" secondAttribute="centerY" id="mk2-aT-mAj"/>
+                    <constraint firstItem="Hkl-Pq-hbA" firstAttribute="top" secondItem="Mb5-eY-2Ig" secondAttribute="top" constant="12" id="qUk-0w-1Dh"/>
+                    <constraint firstItem="Hkl-Pq-hbA" firstAttribute="leading" secondItem="jYr-Ee-XAc" secondAttribute="trailing" constant="14" id="qs7-ph-Ub6"/>
+                    <constraint firstItem="jYr-Ee-XAc" firstAttribute="leading" secondItem="Mb5-eY-2Ig" secondAttribute="leading" constant="12" id="rc7-ul-Hjq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkboxButton" destination="jYr-Ee-XAc" id="cpu-3l-aIp"/>
+                <outlet property="titleLabel" destination="Hkl-Pq-hbA" id="3vx-sG-Cf8"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="54.910714285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

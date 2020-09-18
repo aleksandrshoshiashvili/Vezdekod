@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-PodcastEdit/Pods-PodcastEdit-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework
+${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework
+${BUILT_PRODUCTS_DIR}/SwiftyListKit/SwiftyListKit.framework
+${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3sy-ig-KQg" customClass="TimeCodeView" customModule="PodcastEdit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txl-SK-NRT">
+                    <rect key="frame" x="0.0" y="14" width="46" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="CSt-r6-f1n"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.28627450980392155" green="0.52549019607843139" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHP-mj-QV5">
+                    <rect key="frame" x="46" y="14" width="24.5" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="qVX-cb-7AL"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content=" — ">
+                            <attributes>
+                                <font key="NSFont" size="17" name="SFProText-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKV-8g-Z71">
+                    <rect key="frame" x="70.5" y="14" width="343.5" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="RnA-Ls-vJA"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Label">
+                            <attributes>
+                                <font key="NSFont" size="17" name="SFProText-Regular"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Txl-SK-NRT" firstAttribute="leading" secondItem="3sy-ig-KQg" secondAttribute="leading" id="1lt-u0-nza"/>
+                <constraint firstItem="RBg-V9-wl1" firstAttribute="trailing" secondItem="wKV-8g-Z71" secondAttribute="trailing" id="3aa-Rf-OLI"/>
+                <constraint firstItem="IHP-mj-QV5" firstAttribute="leading" secondItem="Txl-SK-NRT" secondAttribute="trailing" id="HhC-fi-Zox"/>
+                <constraint firstItem="wKV-8g-Z71" firstAttribute="top" secondItem="3sy-ig-KQg" secondAttribute="top" constant="14" id="L7D-Zb-xAi"/>
+                <constraint firstItem="RBg-V9-wl1" firstAttribute="bottom" secondItem="wKV-8g-Z71" secondAttribute="bottom" constant="14" id="c5N-MJ-163"/>
+                <constraint firstItem="IHP-mj-QV5" firstAttribute="top" secondItem="3sy-ig-KQg" secondAttribute="top" constant="14" id="fkX-iK-bB1"/>
+                <constraint firstItem="wKV-8g-Z71" firstAttribute="leading" secondItem="IHP-mj-QV5" secondAttribute="trailing" id="wcH-hl-k7o"/>
+                <constraint firstItem="Txl-SK-NRT" firstAttribute="top" secondItem="3sy-ig-KQg" secondAttribute="top" constant="14" id="zyV-y0-9l9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="RBg-V9-wl1"/>
+            <connections>
+                <outlet property="nameLabel" destination="wKV-8g-Z71" id="gXZ-f8-T1D"/>
+                <outlet property="timeButton" destination="Txl-SK-NRT" id="OjX-Qw-is1"/>
+            </connections>
+            <point key="canvasLocation" x="834.78260869565224" y="-137.61160714285714"/>
+        </view>
+    </objects>
+</document>

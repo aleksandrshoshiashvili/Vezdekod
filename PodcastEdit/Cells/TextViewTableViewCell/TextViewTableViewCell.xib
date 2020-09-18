@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextViewTableViewCell" rowHeight="128" id="jds-lW-moS" customClass="TextViewTableViewCell" customModule="PodcastEdit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jds-lW-moS" id="FGS-GI-EOQ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahu-LS-Dof">
+                        <rect key="frame" x="12" y="14" width="390" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.42745098039215684" green="0.47058823529411764" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ulV-ZZ-wSl">
+                        <rect key="frame" x="12" y="43" width="390" height="64"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="Xxw-ab-5FV"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ulV-ZZ-wSl" secondAttribute="trailing" constant="12" id="9EG-FQ-aIi"/>
+                    <constraint firstAttribute="trailing" secondItem="ahu-LS-Dof" secondAttribute="trailing" constant="12" id="CXY-sn-eI1"/>
+                    <constraint firstItem="ulV-ZZ-wSl" firstAttribute="leading" secondItem="FGS-GI-EOQ" secondAttribute="leading" constant="12" id="IVd-CB-Mfs"/>
+                    <constraint firstItem="ahu-LS-Dof" firstAttribute="top" secondItem="FGS-GI-EOQ" secondAttribute="top" constant="14" id="NCW-Dl-WaV"/>
+                    <constraint firstItem="ulV-ZZ-wSl" firstAttribute="top" secondItem="ahu-LS-Dof" secondAttribute="bottom" constant="8" id="OWD-eZ-8Zw"/>
+                    <constraint firstAttribute="bottom" secondItem="ulV-ZZ-wSl" secondAttribute="bottom" constant="22" id="ZeK-zh-AQX"/>
+                    <constraint firstItem="ahu-LS-Dof" firstAttribute="leading" secondItem="FGS-GI-EOQ" secondAttribute="leading" constant="12" id="nJ3-ve-y8N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textView" destination="ulV-ZZ-wSl" id="CmH-B9-Z0I"/>
+                <outlet property="titleLabel" destination="ahu-LS-Dof" id="6jc-SG-QXF"/>
+            </connections>
+            <point key="canvasLocation" x="69.565217391304358" y="-72.321428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
