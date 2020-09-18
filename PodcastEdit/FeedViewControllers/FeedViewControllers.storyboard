@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2BL-JL-vam">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feed View Controllers-->
+        <scene sceneID="RfD-hx-94j">
+            <objects>
+                <viewController id="2BL-JL-vam" customClass="FeedViewControllers" customModule="PodcastEdit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ecp-bZ-b6N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed" translatesAutoresizingMaskIntoConstraints="NO" id="Kh8-eo-Dq9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iW-Cc-oaD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="T7N-xS-Wfv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3iW-Cc-oaD" firstAttribute="top" secondItem="ecp-bZ-b6N" secondAttribute="top" id="3Ej-ld-gkb"/>
+                            <constraint firstAttribute="bottom" secondItem="Kh8-eo-Dq9" secondAttribute="bottom" id="85v-0w-TUq"/>
+                            <constraint firstItem="6k2-xf-5LE" firstAttribute="trailing" secondItem="Kh8-eo-Dq9" secondAttribute="trailing" id="MUJ-JI-xcI"/>
+                            <constraint firstItem="Kh8-eo-Dq9" firstAttribute="top" secondItem="ecp-bZ-b6N" secondAttribute="top" id="fkE-hV-93L"/>
+                            <constraint firstItem="3iW-Cc-oaD" firstAttribute="leading" secondItem="ecp-bZ-b6N" secondAttribute="leading" id="fr0-9z-0MK"/>
+                            <constraint firstItem="Kh8-eo-Dq9" firstAttribute="leading" secondItem="6k2-xf-5LE" secondAttribute="leading" id="iSH-w3-QhT"/>
+                            <constraint firstAttribute="trailing" secondItem="3iW-Cc-oaD" secondAttribute="trailing" id="tz3-37-zBk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6k2-xf-5LE"/>
+                    </view>
+                    <connections>
+                        <outlet property="feedImageView" destination="Kh8-eo-Dq9" id="6kV-0J-bQL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0PW-QP-y2B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2463768115942031" y="148.66071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="feed" width="562.5" height="1218"/>
+    </resources>
+</document>

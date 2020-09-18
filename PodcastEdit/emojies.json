@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Музыка",
+        "emoji": "🎧",
+        "category": "positive"
+    },
+    {
+        "title": "Кино",
+        "emoji": "🍿",
+        "category": "highEnergy"
+    },
+    {
+        "title": "Осень",
+        "emoji": "🍂",
+        "category": "positive"
+    },
+    {
+        "title": "Работа",
+        "emoji": "👔",
+        "category": "positive"
+    },
+    {
+        "title": "Карантин",
+        "emoji": "😷",
+        "category": "lowEnergy"
+    },
+    {
+        "title": "Политика",
+        "emoji": "🤦",
+        "category": "negative"
+    }
+]

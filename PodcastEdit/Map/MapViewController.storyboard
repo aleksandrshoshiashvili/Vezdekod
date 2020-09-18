@@ -43,11 +43,41 @@
                                     <constraint firstAttribute="width" constant="84" placeholder="YES" id="yFN-Pe-S2P"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Hh-Mf-Q9p">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gib-B7-3fV">
                                 <rect key="frame" x="0.0" y="710" width="414" height="186"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Hh-Mf-Q9p">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="186"/>
+                                        <subviews>
+                                            <searchBar contentMode="redraw" placeholder="Поиск по теме и настроению" translatesAutoresizingMaskIntoConstraints="NO" id="RLH-dC-Pbu">
+                                                <rect key="frame" x="0.0" y="12" width="414" height="56"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </searchBar>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MGt-rs-6SA" customClass="GenericCollectionContainerView" customModule="PodcastEdit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="68" width="414" height="118"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="RLH-dC-Pbu" firstAttribute="leading" secondItem="8Hh-Mf-Q9p" secondAttribute="leading" id="AAQ-8d-0xD"/>
+                                            <constraint firstAttribute="height" constant="186" id="BaP-7N-Izf"/>
+                                            <constraint firstAttribute="trailing" secondItem="RLH-dC-Pbu" secondAttribute="trailing" id="YTE-dl-JWq"/>
+                                            <constraint firstAttribute="bottom" secondItem="MGt-rs-6SA" secondAttribute="bottom" id="ZxQ-lR-2gH"/>
+                                            <constraint firstItem="MGt-rs-6SA" firstAttribute="leading" secondItem="8Hh-Mf-Q9p" secondAttribute="leading" id="c63-CB-h06"/>
+                                            <constraint firstItem="RLH-dC-Pbu" firstAttribute="top" secondItem="8Hh-Mf-Q9p" secondAttribute="top" constant="12" id="kDw-sB-AuE"/>
+                                            <constraint firstAttribute="trailing" secondItem="MGt-rs-6SA" secondAttribute="trailing" id="rh7-4Q-lbR"/>
+                                            <constraint firstItem="MGt-rs-6SA" firstAttribute="top" secondItem="RLH-dC-Pbu" secondAttribute="bottom" id="t2n-Ud-dGB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="186" id="BaP-7N-Izf"/>
+                                    <constraint firstItem="8Hh-Mf-Q9p" firstAttribute="leading" secondItem="gib-B7-3fV" secondAttribute="leading" id="Ehh-yR-UFR"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Hh-Mf-Q9p" secondAttribute="bottom" id="HSH-0E-JqS"/>
+                                    <constraint firstItem="8Hh-Mf-Q9p" firstAttribute="top" secondItem="gib-B7-3fV" secondAttribute="top" id="aN9-1Z-ZbP"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Hh-Mf-Q9p" secondAttribute="bottom" id="gJv-R6-fhi"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Hh-Mf-Q9p" secondAttribute="trailing" id="iJm-Tv-KsW"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -56,25 +86,31 @@
                             <constraint firstItem="w4u-yF-V2s" firstAttribute="trailing" secondItem="2pq-nd-ctq" secondAttribute="trailing" constant="16" id="3fA-xy-JAI"/>
                             <constraint firstItem="nMF-hP-jHJ" firstAttribute="top" secondItem="wbs-qP-ntI" secondAttribute="top" id="6UV-da-X2D"/>
                             <constraint firstItem="nMF-hP-jHJ" firstAttribute="leading" secondItem="w4u-yF-V2s" secondAttribute="leading" id="A6Q-Xn-dHH"/>
+                            <constraint firstItem="gib-B7-3fV" firstAttribute="trailing" secondItem="w4u-yF-V2s" secondAttribute="trailing" id="CEx-bG-HRZ"/>
+                            <constraint firstItem="gib-B7-3fV" firstAttribute="leading" secondItem="w4u-yF-V2s" secondAttribute="leading" id="Cld-C9-Ed7"/>
                             <constraint firstItem="Fzq-WG-BqM" firstAttribute="centerX" secondItem="wbs-qP-ntI" secondAttribute="centerX" id="Fqw-mD-vUG"/>
-                            <constraint firstItem="8Hh-Mf-Q9p" firstAttribute="leading" secondItem="w4u-yF-V2s" secondAttribute="leading" id="JTy-Uu-2yK"/>
                             <constraint firstAttribute="bottom" secondItem="nMF-hP-jHJ" secondAttribute="bottom" id="QKw-Ig-w36"/>
                             <constraint firstItem="Fzq-WG-BqM" firstAttribute="centerY" secondItem="2pq-nd-ctq" secondAttribute="centerY" id="WMf-bd-IBQ"/>
                             <constraint firstItem="w4u-yF-V2s" firstAttribute="trailing" secondItem="nMF-hP-jHJ" secondAttribute="trailing" id="ZQJ-Gx-A44"/>
-                            <constraint firstAttribute="bottom" secondItem="8Hh-Mf-Q9p" secondAttribute="bottom" id="qFp-x8-Whq"/>
                             <constraint firstItem="Fzq-WG-BqM" firstAttribute="top" secondItem="w4u-yF-V2s" secondAttribute="top" constant="6" id="qY9-ft-QOA"/>
-                            <constraint firstItem="w4u-yF-V2s" firstAttribute="trailing" secondItem="8Hh-Mf-Q9p" secondAttribute="trailing" id="wAS-0c-vft"/>
+                            <constraint firstAttribute="bottom" secondItem="gib-B7-3fV" secondAttribute="bottom" id="w1R-wu-2dT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w4u-yF-V2s"/>
                     </view>
                     <connections>
                         <outlet property="closeButton" destination="2pq-nd-ctq" id="BQY-no-Hdh"/>
+                        <outlet property="collectionContainer" destination="MGt-rs-6SA" id="iAD-qg-F2D"/>
+                        <outlet property="filterContainerBottomConstraint" destination="w1R-wu-2dT" id="N5v-Yj-Gya"/>
+                        <outlet property="mapView" destination="nMF-hP-jHJ" id="iZU-Lo-puL"/>
+                        <outlet property="searchBar" destination="RLH-dC-Pbu" id="HPt-49-iyv"/>
+                        <outlet property="searchContainerView" destination="8Hh-Mf-Q9p" id="9JV-YT-FIf"/>
+                        <outlet property="searchShadowContainerView" destination="gib-B7-3fV" id="NLS-pe-hkT"/>
                         <outlet property="selectorView" destination="Fzq-WG-BqM" id="Hfq-HU-aRd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ku0-Im-uao" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-154" y="23"/>
+            <point key="canvasLocation" x="-155.07246376811597" y="22.767857142857142"/>
         </scene>
     </scenes>
     <resources>

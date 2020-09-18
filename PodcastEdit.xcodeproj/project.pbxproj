@@ -46,6 +46,15 @@
 		69405CC625153219001AE387 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69405CBD25153219001AE387 /* UITableView+Reusable.swift */; };
 		69405CC725153219001AE387 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69405CBE25153219001AE387 /* NibLoadable.swift */; };
 		69405CC825153219001AE387 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69405CBF25153219001AE387 /* NibOwnerLoadable.swift */; };
+		698B596E25155B6F00561EAC /* GenericCollectionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B596D25155B6F00561EAC /* GenericCollectionContainerView.swift */; };
+		698B597025155BD700561EAC /* EmojiFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B596F25155BD700561EAC /* EmojiFilter.swift */; };
+		698B597225155C7100561EAC /* emojies.json in Resources */ = {isa = PBXBuildFile; fileRef = 698B597125155C7100561EAC /* emojies.json */; };
+		698B597425155D2B00561EAC /* EmojiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B597325155D2B00561EAC /* EmojiesService.swift */; };
+		698B597725155E0B00561EAC /* EmojiFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B597625155E0B00561EAC /* EmojiFilterCollectionViewCell.swift */; };
+		698B597925155E1100561EAC /* EmojiFilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698B597825155E1100561EAC /* EmojiFilterCollectionViewCell.xib */; };
+		698B597B2515601B00561EAC /* EmojiFiltersVMF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B597A2515601B00561EAC /* EmojiFiltersVMF.swift */; };
+		698B597D2515690F00561EAC /* FeedViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B597C2515690F00561EAC /* FeedViewControllers.swift */; };
+		698B597F2515691C00561EAC /* FeedViewControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698B597E2515691C00561EAC /* FeedViewControllers.storyboard */; };
 		893CCF8A25129218008A5470 /* CreatePodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893CCF8925129218008A5470 /* CreatePodcastViewController.swift */; };
 		893CCF8C2512925C008A5470 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893CCF8B2512925C008A5470 /* CheckboxTableViewCell.swift */; };
 		893CCF8E25129264008A5470 /* CheckboxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893CCF8D25129264008A5470 /* CheckboxTableViewCell.xib */; };
@@ -110,6 +119,15 @@
 		69405CBD25153219001AE387 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		69405CBE25153219001AE387 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		69405CBF25153219001AE387 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		698B596D25155B6F00561EAC /* GenericCollectionContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionContainerView.swift; sourceTree = "<group>"; };
+		698B596F25155BD700561EAC /* EmojiFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiFilter.swift; sourceTree = "<group>"; };
+		698B597125155C7100561EAC /* emojies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = emojies.json; sourceTree = "<group>"; };
+		698B597325155D2B00561EAC /* EmojiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiesService.swift; sourceTree = "<group>"; };
+		698B597625155E0B00561EAC /* EmojiFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiFilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		698B597825155E1100561EAC /* EmojiFilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiFilterCollectionViewCell.xib; sourceTree = "<group>"; };
+		698B597A2515601B00561EAC /* EmojiFiltersVMF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiFiltersVMF.swift; sourceTree = "<group>"; };
+		698B597C2515690F00561EAC /* FeedViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllers.swift; sourceTree = "<group>"; };
+		698B597E2515691C00561EAC /* FeedViewControllers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewControllers.storyboard; sourceTree = "<group>"; };
 		80564395478A67FC4DCB51B7 /* Pods-PodcastEdit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodcastEdit.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodcastEdit/Pods-PodcastEdit.release.xcconfig"; sourceTree = "<group>"; };
 		893CCF8925129218008A5470 /* CreatePodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePodcastViewController.swift; sourceTree = "<group>"; };
 		893CCF8B2512925C008A5470 /* CheckboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxTableViewCell.swift; sourceTree = "<group>"; };
@@ -193,11 +211,14 @@
 				893CCF882512920A008A5470 /* Cells */,
 				01A8D89C251276D6001DCEBD /* AppDelegate.swift */,
 				01A8D8A0251276D6001DCEBD /* MyPodcastsViewController.swift */,
+				698B59802515691F00561EAC /* FeedViewControllers */,
 				69405CB425153219001AE387 /* Map */,
 				893CCF9C251299EC008A5470 /* CreatePodcast */,
 				01250133251328AF004A32A8 /* EditPodcast */,
 				0125013E251342C7004A32A8 /* NewPodcast */,
 				01A8D8D025127D61001DCEBD /* PodcastAddedViewController.swift */,
+				698B597325155D2B00561EAC /* EmojiesService.swift */,
+				698B597125155C7100561EAC /* emojies.json */,
 				01A8D8C925127959001DCEBD /* Extensions */,
 				01A8D8A2251276D6001DCEBD /* Main.storyboard */,
 				01A8D8A5251276DA001DCEBD /* Assets.xcassets */,
@@ -253,8 +274,8 @@
 			children = (
 				69405CB525153219001AE387 /* MapViewController.swift */,
 				69405CB625153219001AE387 /* MapViewController.storyboard */,
-				69405CB725153219001AE387 /* SelectorView */,
-				69405CBA25153219001AE387 /* Reusable */,
+				698B597A2515601B00561EAC /* EmojiFiltersVMF.swift */,
+				698B596F25155BD700561EAC /* EmojiFilter.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -280,9 +301,28 @@
 			path = Reusable;
 			sourceTree = "<group>";
 		};
+		698B597525155DFF00561EAC /* EmojiFilterCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				698B597625155E0B00561EAC /* EmojiFilterCollectionViewCell.swift */,
+				698B597825155E1100561EAC /* EmojiFilterCollectionViewCell.xib */,
+			);
+			path = EmojiFilterCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		698B59802515691F00561EAC /* FeedViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				698B597C2515690F00561EAC /* FeedViewControllers.swift */,
+				698B597E2515691C00561EAC /* FeedViewControllers.storyboard */,
+			);
+			path = FeedViewControllers;
+			sourceTree = "<group>";
+		};
 		893CCF882512920A008A5470 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				698B597525155DFF00561EAC /* EmojiFilterCollectionViewCell */,
 				893CCFB62512B0FE008A5470 /* FIleTableViewCell */,
 				893CCFA22512A68B008A5470 /* Data */,
 				893CCFB12512AE39008A5470 /* LinkTableViewCell */,
@@ -334,6 +374,8 @@
 		893CCF9F2512A600008A5470 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				698B596D25155B6F00561EAC /* GenericCollectionContainerView.swift */,
+				69405CB725153219001AE387 /* SelectorView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,6 +393,7 @@
 		893CCFA72512A83A008A5470 /* UIHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				69405CBA25153219001AE387 /* Reusable */,
 				893CCFA82512A843008A5470 /* ImagePickerService.swift */,
 			);
 			path = UIHelpers;
@@ -455,7 +498,9 @@
 				01A8D8C425127834001DCEBD /* TTCommons-DemiBold.ttf in Resources */,
 				01A8D8C225127834001DCEBD /* TTCommons-Medium.ttf in Resources */,
 				01A8D8D62512A8F5001DCEBD /* AddTimeCodeView.xib in Resources */,
+				698B597F2515691C00561EAC /* FeedViewControllers.storyboard in Resources */,
 				01A8D8C125127834001DCEBD /* TTCommons-ExtraLight.ttf in Resources */,
+				698B597925155E1100561EAC /* EmojiFilterCollectionViewCell.xib in Resources */,
 				01A8D8CF2512797C001DCEBD /* LaunchScreen.storyboard in Resources */,
 				893CCFBA2512B110008A5470 /* FileTableViewCell.xib in Resources */,
 				893CCF8E25129264008A5470 /* CheckboxTableViewCell.xib in Resources */,
@@ -465,6 +510,7 @@
 				69405CC325153219001AE387 /* SelectorView.xib in Resources */,
 				01250140251342D9004A32A8 /* TimeCodeView.xib in Resources */,
 				01A8D8C825127834001DCEBD /* TTCommons-ExtraBold.ttf in Resources */,
+				698B597225155C7100561EAC /* emojies.json in Resources */,
 				01A8D8BF25127834001DCEBD /* TTCommons-Black.ttf in Resources */,
 				01A8D8C325127834001DCEBD /* SF-Pro-Text-Regular.otf in Resources */,
 				01A8D8C025127834001DCEBD /* TTCommons-Bold.ttf in Resources */,
@@ -527,6 +573,7 @@
 			files = (
 				893CCFA92512A843008A5470 /* ImagePickerService.swift in Sources */,
 				893CCFA42512A69B008A5470 /* TextAndValue.swift in Sources */,
+				698B597D2515690F00561EAC /* FeedViewControllers.swift in Sources */,
 				69405CC225153219001AE387 /* SelectorView.swift in Sources */,
 				0125013525132C32004A32A8 /* NewPodcastViewController.swift in Sources */,
 				01A8D8A1251276D6001DCEBD /* MyPodcastsViewController.swift in Sources */,
@@ -538,6 +585,7 @@
 				893CCFA12512A606008A5470 /* TextField.swift in Sources */,
 				69405CC625153219001AE387 /* UITableView+Reusable.swift in Sources */,
 				01A8D89D251276D6001DCEBD /* AppDelegate.swift in Sources */,
+				698B596E25155B6F00561EAC /* GenericCollectionContainerView.swift in Sources */,
 				893CCF9E25129A98008A5470 /* CreatePodcastSettings.swift in Sources */,
 				893CCF9B25129717008A5470 /* CreatePosdacstVMF.swift in Sources */,
 				69405CC725153219001AE387 /* NibLoadable.swift in Sources */,
@@ -545,14 +593,18 @@
 				893CCFB02512AA6C008A5470 /* TitleSubtitleAndValue.swift in Sources */,
 				893CCFB32512AE47008A5470 /* LinkTableViewCell.swift in Sources */,
 				0125013D251342BC004A32A8 /* TimeCodeView.swift in Sources */,
+				698B597425155D2B00561EAC /* EmojiesService.swift in Sources */,
 				893CCFB82512B10B008A5470 /* FileTableViewCell.swift in Sources */,
 				01A8D8CC25127959001DCEBD /* UIView+Border.swift in Sources */,
 				893CCFAC2512AA28008A5470 /* EmptyStateTableViewCell.swift in Sources */,
 				0125013925133275004A32A8 /* TimeDatePicker.swift in Sources */,
+				698B597B2515601B00561EAC /* EmojiFiltersVMF.swift in Sources */,
 				69405CC025153219001AE387 /* MapViewController.swift in Sources */,
 				01A8D8D72512A8F5001DCEBD /* AddTimeCodeView.swift in Sources */,
 				01A8D8CD25127959001DCEBD /* UIColor+RGB.swift in Sources */,
+				698B597025155BD700561EAC /* EmojiFilter.swift in Sources */,
 				893CCF9225129297008A5470 /* IconFieldTableViewCell.swift in Sources */,
+				698B597725155E0B00561EAC /* EmojiFilterCollectionViewCell.swift in Sources */,
 				893CCF97251292DE008A5470 /* TextViewTableViewCell.swift in Sources */,
 				69405CC525153219001AE387 /* Reusable.swift in Sources */,
 				0125013B25133674004A32A8 /* Int+Time.swift in Sources */,

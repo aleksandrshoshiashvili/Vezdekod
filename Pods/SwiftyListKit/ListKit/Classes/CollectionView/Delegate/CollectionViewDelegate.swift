@@ -59,10 +59,6 @@ open class CollectionViewDelegate<S: CollectionListSection>: NSObject, UICollect
         sendCallBack(for: willDisplayCell, collectionView: collectionView, cell: cell, indexPath: indexPath)
     }
     
-    public func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        sendCallBack(for: didEndDisplayingCell, collectionView: collectionView, cell: cell, indexPath: indexPath)
-    }
-    
     public func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
         sendCallBack(for: willDisplaySupplementaryView, collectionView: collectionView, supplementaryView: view, indexPath: indexPath)
     }

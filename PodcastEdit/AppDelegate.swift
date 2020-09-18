@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-                
+
         window = UIWindow(frame: UIScreen.main.bounds)
         
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -21,8 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            window?.rootViewController = viewController
 //            window?.makeKeyAndVisible()
 //        }
-        let vc = UIStoryboard(name: "MapViewController", bundle: nil).instantiateInitialViewController()!
+        let vc = UIStoryboard(name: "FeedViewControllers", bundle: nil).instantiateInitialViewController()!
         let nav = UINavigationController(rootViewController: vc)
+        nav.setNavigationBarHidden(true, animated: false)
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         
