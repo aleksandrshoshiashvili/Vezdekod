@@ -13,4 +13,5 @@ struct TitleSubtitleAndValue<Value>: ListItemDataModel {
     let title: String
     let subtitle: String
     let value: Value
+    var additionalField: Bool = true
 }

@@ -28,5 +28,30 @@
         "title": "Политика",
         "emoji": "🤦",
         "category": "negative"
+    },
+    {
+        "title": "Искусство",
+        "emoji": "🎨",
+        "category": "lowEnergy"
+    },
+    {
+        "title": "Фото",
+        "emoji": "📷",
+        "category": "highEnergy"
+    },
+    {
+        "title": "Спорт",
+        "emoji": "🏃‍♀️",
+        "category": "highEnergy"
+    },
+    {
+        "title": "Хакатон",
+        "emoji": "💻",
+        "category": "highEnergy"
+    },
+    {
+        "title": "Сессия",
+        "emoji": "👩‍🏫",
+        "category": "negative"
     }
 ]

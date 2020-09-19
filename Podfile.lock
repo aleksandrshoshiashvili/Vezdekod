@@ -1,4 +1,5 @@
 PODS:
+  - Cluster (3.0.3)
   - DifferenceKit (1.1.5):
     - DifferenceKit/Core (= 1.1.5)
     - DifferenceKit/UIKitExtension (= 1.1.5)
@@ -15,12 +16,14 @@ PODS:
     - SteviaLayout (~> 4.7.3)
 
 DEPENDENCIES:
+  - Cluster
   - SnapKit
   - SwiftyListKit
   - YPImagePicker
 
 SPEC REPOS:
   trunk:
+    - Cluster
     - DifferenceKit
     - PryntTrimmerView
     - SnapKit
@@ -29,6 +32,7 @@ SPEC REPOS:
     - YPImagePicker
 
 SPEC CHECKSUMS:
+  Cluster: d72510594f60d901905953aafdc811d1888177ae
   DifferenceKit: 516f12e336ed65a3a0665847b5c3cb5cad4bd4ea
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
@@ -36,6 +40,6 @@ SPEC CHECKSUMS:
   SwiftyListKit: b2a10e861e2b2d8ea3762be30d40492ec6dca447
   YPImagePicker: 08bbb809ed62bf4149fc015c97249eb4b9463ff9
 
-PODFILE CHECKSUM: 3288d3eb728c6d1ba2c6f92e540c160364701dab
+PODFILE CHECKSUM: 174586fada32f1807b02baad208ed13aeabb2379
 
 COCOAPODS: 1.9.3

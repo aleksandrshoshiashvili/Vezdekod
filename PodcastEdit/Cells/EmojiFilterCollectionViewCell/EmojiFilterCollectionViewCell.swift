@@ -13,7 +13,7 @@ final class EmojiFilterCollectionViewCell: UICollectionViewCell, CollectionItem 
 
     @IBOutlet private weak var categoryRoundedView: UIView!
     @IBOutlet private weak var categoryContainerView: UIView!
-    @IBOutlet private weak var emojiContainerView: UIView!
+    @IBOutlet weak var emojiContainerView: UIView!
     @IBOutlet private weak var emojiLabel: UILabel!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var categoryLabel: UILabel!
@@ -44,7 +44,13 @@ extension EmojiFilterCollectionViewCell {
 extension ListItemStyle where T: EmojiFilterCollectionViewCell {
     static var selected: ListItemStyle<T> {
         return ListItemStyle<T> {
-            $0.backgroundColor = .red
+            $0.emojiContainerView.layer.borderColor = UIColor(hex: 0x3F8AE0).cgColor
+        }
+    }
+
+    static var unselected: ListItemStyle<T> {
+        return ListItemStyle<T> {
+            $0.emojiContainerView.layer.borderColor = UIColor.label.withAlphaComponent(0.14).cgColor
         }
     }
 }

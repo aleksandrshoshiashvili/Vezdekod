@@ -16,7 +16,7 @@ final class EmojiesService {
         }
         do {
             let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-            let jsonResult = try! JSONDecoder().decode([EmojiFilter].self, from: data)
+            let jsonResult = try JSONDecoder().decode([EmojiFilter].self, from: data)
             return jsonResult
         } catch {
             return []

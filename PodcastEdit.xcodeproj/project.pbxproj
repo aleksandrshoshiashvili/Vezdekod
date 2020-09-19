@@ -55,6 +55,10 @@
 		698B597B2515601B00561EAC /* EmojiFiltersVMF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B597A2515601B00561EAC /* EmojiFiltersVMF.swift */; };
 		698B597D2515690F00561EAC /* FeedViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B597C2515690F00561EAC /* FeedViewControllers.swift */; };
 		698B597F2515691C00561EAC /* FeedViewControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698B597E2515691C00561EAC /* FeedViewControllers.storyboard */; };
+		698B59832515736600561EAC /* MapPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B59822515736600561EAC /* MapPinView.swift */; };
+		698B59852515736B00561EAC /* MapPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698B59842515736B00561EAC /* MapPinView.xib */; };
+		698B59872515763200561EAC /* LocationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B59862515763200561EAC /* LocationAnnotationView.swift */; };
+		698B5989251576B400561EAC /* CountClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B5988251576B400561EAC /* CountClusterAnnotationView.swift */; };
 		893CCF8A25129218008A5470 /* CreatePodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893CCF8925129218008A5470 /* CreatePodcastViewController.swift */; };
 		893CCF8C2512925C008A5470 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893CCF8B2512925C008A5470 /* CheckboxTableViewCell.swift */; };
 		893CCF8E25129264008A5470 /* CheckboxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893CCF8D25129264008A5470 /* CheckboxTableViewCell.xib */; };
@@ -128,6 +132,10 @@
 		698B597A2515601B00561EAC /* EmojiFiltersVMF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiFiltersVMF.swift; sourceTree = "<group>"; };
 		698B597C2515690F00561EAC /* FeedViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllers.swift; sourceTree = "<group>"; };
 		698B597E2515691C00561EAC /* FeedViewControllers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewControllers.storyboard; sourceTree = "<group>"; };
+		698B59822515736600561EAC /* MapPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinView.swift; sourceTree = "<group>"; };
+		698B59842515736B00561EAC /* MapPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapPinView.xib; sourceTree = "<group>"; };
+		698B59862515763200561EAC /* LocationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotationView.swift; sourceTree = "<group>"; };
+		698B5988251576B400561EAC /* CountClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountClusterAnnotationView.swift; sourceTree = "<group>"; };
 		80564395478A67FC4DCB51B7 /* Pods-PodcastEdit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodcastEdit.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodcastEdit/Pods-PodcastEdit.release.xcconfig"; sourceTree = "<group>"; };
 		893CCF8925129218008A5470 /* CreatePodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePodcastViewController.swift; sourceTree = "<group>"; };
 		893CCF8B2512925C008A5470 /* CheckboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxTableViewCell.swift; sourceTree = "<group>"; };
@@ -319,6 +327,15 @@
 			path = FeedViewControllers;
 			sourceTree = "<group>";
 		};
+		698B59812515735E00561EAC /* MapPinView */ = {
+			isa = PBXGroup;
+			children = (
+				698B59822515736600561EAC /* MapPinView.swift */,
+				698B59842515736B00561EAC /* MapPinView.xib */,
+			);
+			path = MapPinView;
+			sourceTree = "<group>";
+		};
 		893CCF882512920A008A5470 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,8 +391,11 @@
 		893CCF9F2512A600008A5470 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				698B59812515735E00561EAC /* MapPinView */,
 				698B596D25155B6F00561EAC /* GenericCollectionContainerView.swift */,
 				69405CB725153219001AE387 /* SelectorView */,
+				698B59862515763200561EAC /* LocationAnnotationView.swift */,
+				698B5988251576B400561EAC /* CountClusterAnnotationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -509,6 +529,7 @@
 				01A8D8BE25127834001DCEBD /* TTCommons-Regular.ttf in Resources */,
 				69405CC325153219001AE387 /* SelectorView.xib in Resources */,
 				01250140251342D9004A32A8 /* TimeCodeView.xib in Resources */,
+				698B59852515736B00561EAC /* MapPinView.xib in Resources */,
 				01A8D8C825127834001DCEBD /* TTCommons-ExtraBold.ttf in Resources */,
 				698B597225155C7100561EAC /* emojies.json in Resources */,
 				01A8D8BF25127834001DCEBD /* TTCommons-Black.ttf in Resources */,
@@ -580,6 +601,7 @@
 				69405CC425153219001AE387 /* UICollectionView+Reusable.swift in Sources */,
 				01A8D8D3251296BC001DCEBD /* PodcastEditViewController.swift in Sources */,
 				01A8D8D125127D61001DCEBD /* PodcastAddedViewController.swift in Sources */,
+				698B5989251576B400561EAC /* CountClusterAnnotationView.swift in Sources */,
 				893CCF8C2512925C008A5470 /* CheckboxTableViewCell.swift in Sources */,
 				69405CC825153219001AE387 /* NibOwnerLoadable.swift in Sources */,
 				893CCFA12512A606008A5470 /* TextField.swift in Sources */,
@@ -601,6 +623,8 @@
 				698B597B2515601B00561EAC /* EmojiFiltersVMF.swift in Sources */,
 				69405CC025153219001AE387 /* MapViewController.swift in Sources */,
 				01A8D8D72512A8F5001DCEBD /* AddTimeCodeView.swift in Sources */,
+				698B59872515763200561EAC /* LocationAnnotationView.swift in Sources */,
+				698B59832515736600561EAC /* MapPinView.swift in Sources */,
 				01A8D8CD25127959001DCEBD /* UIColor+RGB.swift in Sources */,
 				698B597025155BD700561EAC /* EmojiFilter.swift in Sources */,
 				893CCF9225129297008A5470 /* IconFieldTableViewCell.swift in Sources */,

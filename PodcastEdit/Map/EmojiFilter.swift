@@ -10,7 +10,7 @@ import UIKit
 
 struct EmojiFilter: Codable {
 
-    enum Category: String, Codable {
+    enum Category: String, Codable, CaseIterable {
         case highEnergy
         case positive
         case negative
@@ -42,4 +42,16 @@ extension EmojiFilter.Category {
         }
     }
 
+    var fullDescription: String {
+        switch self {
+        case .highEnergy:
+            return "😜 Энергичный"
+        case .positive:
+            return "😃 Хорошее настроение"
+        case .negative:
+            return "🙁 Плохое настроение"
+        case .lowEnergy:
+            return "😴 Спокойный"
+        }
+    }
 }

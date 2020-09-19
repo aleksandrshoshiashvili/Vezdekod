@@ -5,4 +5,5 @@ target 'PodcastEdit' do
   pod 'SnapKit'
   pod 'YPImagePicker'
   pod 'SwiftyListKit'
+  pod 'Cluster'
 end

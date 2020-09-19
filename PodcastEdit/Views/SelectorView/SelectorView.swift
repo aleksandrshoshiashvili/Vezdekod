@@ -8,11 +8,19 @@
 
 import UIKit
 
+protocol SelectorViewDelegate: AnyObject {
+    func selectorViewDidPressed(_ view: SelectorView)
+}
+
 final class SelectorView: UIView, NibOwnerLoadable {
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var arrowButton: UIButton!
+
+    private let generator = UIImpactFeedbackGenerator(style: .medium)
+
+    weak var delegate: SelectorViewDelegate?
 
     required init?(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)
@@ -39,6 +47,8 @@ final class SelectorView: UIView, NibOwnerLoadable {
     // MARK: - Actions
 
     @objc private func handleTapAction() {
+        delegate?.selectorViewDidPressed(self)
+        impactOccurred()
         UIView.animate(withDuration: 0.15, animations:  {
           let scale: CGFloat = 0.9
           self.transform = CGAffineTransform(scaleX: scale, y: scale)
@@ -50,6 +60,12 @@ final class SelectorView: UIView, NibOwnerLoadable {
     }
 
     @IBAction private func handleArrowAction() {
-        print("Implement me ---> handleArrowAction")
+        delegate?.selectorViewDidPressed(self)
+        impactOccurred()
+    }
+
+    private func impactOccurred() {
+        generator.prepare()
+        generator.impactOccurred()
     }
 }
